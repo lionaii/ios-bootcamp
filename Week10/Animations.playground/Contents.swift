@@ -34,11 +34,12 @@ box.backgroundColor = UIColor.yellow
 view.addSubview(box)
 // Note: Enable Xcode▸Editor▸Live View to see the animation.
 PlaygroundPage.current.liveView = view
-//: **Step 2**: Rewrite the following animation to be notified when all sub-animations complete:
+
+
 UIView.animate(withDuration: 1, animations: {
   // Move box to lower right corner
   box.center = CGPoint(x: 150, y: 150)
-  }, completion: {
+  }, group: animationGroup, completion: {
     _ in
     UIView.animate(withDuration: 2, animations: {
       // Rotate box 45 degrees
@@ -49,7 +50,7 @@ UIView.animate(withDuration: 1, animations: {
 UIView.animate(withDuration: 4, animations: { () -> Void in
   // Change background color to blue
   view.backgroundColor = UIColor.blue
-})
+}, group: animationGroup, completion: .none)
 
 // This should only print once all the animations are complete
 animationGroup.notify(queue: DispatchQueue.main) {
