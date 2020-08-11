@@ -23,10 +23,8 @@ class ViewController: UIViewController {
 
   let buttonSize: CGFloat = 50
   var isMenuShown = true
-  var currentScale: CGFloat = 1
   var rotationCount: CGFloat = 1
   var animator: UIViewPropertyAnimator?
-  var animationsOnQueue = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
