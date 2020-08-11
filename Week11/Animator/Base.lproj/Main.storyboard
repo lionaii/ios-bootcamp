@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-py-gL8" userLabel="Rotate">
+                                <rect key="frame" x="220.5" y="421" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Fc-l5-uMb"/>
+                                    <constraint firstAttribute="width" constant="50" id="wHP-if-V1l"/>
+                                </constraints>
+                                <state key="normal" image="arrow.uturn.right.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DgA-cI-ELP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-Ag-N6b" userLabel="Round">
+                                <rect key="frame" x="104.5" y="421" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nym-G5-242"/>
+                                    <constraint firstAttribute="width" constant="50" id="rga-o1-Jy9"/>
+                                </constraints>
+                                <state key="normal" image="circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="roundEdgeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfs-HN-Wu9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-pB-kom" userLabel="Scale">
+                                <rect key="frame" x="162.5" y="363" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B62-58-HzC"/>
+                                    <constraint firstAttribute="width" constant="50" id="cc2-fQ-kJ6"/>
+                                </constraints>
+                                <state key="normal" image="chevron.up.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorChangeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFw-5j-Owz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-86-2l6" userLabel="Menu">
+                                <rect key="frame" x="162.5" y="421" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PQd-3c-gYs"/>
+                                    <constraint firstAttribute="height" constant="50" id="dVF-gt-2ro"/>
+                                </constraints>
+                                <state key="normal" image="ellipsis.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9r1-7b-xBB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-ag-LNQ">
+                                <rect key="frame" x="150" y="94" width="75" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="flame" catalog="system" id="WOz-dX-TWT">
+                                        <rect key="frame" x="9" y="12" width="57" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="WyM-tV-KeB"/>
+                                    <constraint firstAttribute="height" constant="75" id="Zdx-0A-p6Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OJS-86-2l6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hF-G1-YCp"/>
+                            <constraint firstItem="p0s-py-gL8" firstAttribute="bottom" secondItem="OJS-86-2l6" secondAttribute="bottom" id="8Ss-46-baF"/>
+                            <constraint firstItem="Vt4-ag-LNQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8g3-wJ-3Ci"/>
+                            <constraint firstItem="bhr-pB-kom" firstAttribute="leading" secondItem="OJS-86-2l6" secondAttribute="leading" id="Evt-oa-Lnd"/>
+                            <constraint firstItem="p0s-py-gL8" firstAttribute="top" secondItem="OJS-86-2l6" secondAttribute="top" id="NhD-et-XtP"/>
+                            <constraint firstItem="p0s-py-gL8" firstAttribute="leading" secondItem="OJS-86-2l6" secondAttribute="trailing" constant="8" id="RA2-FI-4J1"/>
+                            <constraint firstItem="OJS-86-2l6" firstAttribute="top" secondItem="bhr-pB-kom" secondAttribute="bottom" constant="8" id="XFP-1y-0Ft"/>
+                            <constraint firstAttribute="bottom" secondItem="OJS-86-2l6" secondAttribute="bottom" constant="196" id="aqq-SM-RKw"/>
+                            <constraint firstAttribute="bottom" secondItem="Vt4-ag-LNQ" secondAttribute="bottom" constant="498" id="boO-PS-YiW"/>
+                            <constraint firstItem="OJS-86-2l6" firstAttribute="leading" secondItem="Crn-Ag-N6b" secondAttribute="trailing" constant="8" id="efk-EQ-Nk6"/>
+                            <constraint firstItem="Crn-Ag-N6b" firstAttribute="bottom" secondItem="OJS-86-2l6" secondAttribute="bottom" id="mck-ea-HzP"/>
+                            <constraint firstItem="OJS-86-2l6" firstAttribute="top" secondItem="Crn-Ag-N6b" secondAttribute="top" id="xPp-46-fjo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationObject" destination="Vt4-ag-LNQ" id="cQp-dt-tzB"/>
+                        <outlet property="playButton" destination="OJS-86-2l6" id="eWG-ds-UHZ"/>
+                        <outlet property="rotateConstraint" destination="RA2-FI-4J1" id="306-Ig-EBH"/>
+                        <outlet property="rotateRightButton" destination="p0s-py-gL8" id="57s-my-lxv"/>
+                        <outlet property="roundButton" destination="Crn-Ag-N6b" id="xz2-hB-eAy"/>
+                        <outlet property="roundConstraint" destination="efk-EQ-Nk6" id="Vbx-f1-TPi"/>
+                        <outlet property="scaleConstraint" destination="XFP-1y-0Ft" id="drI-Kn-Uys"/>
+                        <outlet property="scaleUpButton" destination="bhr-pB-kom" id="c43-z6-7b7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.uturn.right.circle" catalog="system" width="128" height="121"/>
+        <image name="chevron.up.circle" catalog="system" width="128" height="121"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
+        <image name="flame" catalog="system" width="109" height="128"/>
+    </resources>
+</document>
